@@ -29,7 +29,7 @@ We are supporting deployment in a Mujoco simulation and RealWorld.
 
 ### 5. TODO list
 
-* [ ] Make sim2sim deployment code
+* [x] Make sim2sim deployment code
 * [ ] Opening sim2sim deployment code
 * [ ] Make sim2real deployment code
 * [ ] Opening sim2real deployment code
