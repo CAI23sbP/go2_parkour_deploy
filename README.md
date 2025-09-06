@@ -8,7 +8,7 @@ We are supporting deployment in a Mujoco simulation and RealWorld.
 
 `cd IsaacLab ## going to your IsaacLab folder`
 
-`git clone https://github.com/CAI23sbP/go2_deploy.git`
+`git clone https://github.com/CAI23sbP/go2_parkour_deploy.git`
 
 `cd go2_deploy && pip3 install -e .`
 
