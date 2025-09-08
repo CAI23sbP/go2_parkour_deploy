@@ -6,6 +6,8 @@ We are supporting deployment in a Mujoco simulation and RealWorld.
 
 ### 1. Installation
 
+Before installing this repo, you must install a [unitree_mujoco](https://github.com/unitreerobotics/unitree_mujoco).
+
 `cd IsaacLab ## going to your IsaacLab folder`
 
 `git clone https://github.com/CAI23sbP/go2_deploy.git`
@@ -52,3 +54,23 @@ Thanks to their previous projects.
 4. @boston-dynamics [repo](https://github.com/boston-dynamics/spot-rl-example)
 
 5. @itt-DLSLab [repo](https://github.com/iit-DLSLab/gym-quadruped)
+
+## Citation
+
+```
+Copyright (c) 2025, Sangbaek Park
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software …
+
+The use of this software in academic or scientific publications requires
+explicit citation of the following repository:
+
+https://github.com/CAI23sbP/go2_parkour_deploy
+```
+
+## contact us
+
+```
+sbp0783@hanyang.ac.kr
+```
