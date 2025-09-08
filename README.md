@@ -33,7 +33,8 @@ Before installing this repo, you must install a [unitree_mujoco](https://github.
 
 `python3 scripts/go2_deploy --interface lo`
 
-<video controls src="Screencast from 2025년 09월 08일 19시 33분 34초.webm" title="Title"></video>
+https://github.com/user-attachments/assets/60e20288-eb0b-43f4-8014-b8c9f90be5a8
+
 
 
 ### 4. TODO list
