@@ -1,7 +1,7 @@
 import numpy as np
 import trimesh
 import scipy.interpolate as interpolate
-import Isaaclab_Parkour, os
+import parkour_isaaclab, os
 from scripts.utils import load_local_cfg
 import core
 
@@ -164,7 +164,7 @@ def export_mesh_obj(hf, cfg, out_obj="terrain.obj", center_origin=True):
 def main(args):
 
   logs_path = '/'
-  for path in Isaaclab_Parkour.__path__[0].split('/')[1:-1]:
+  for path in parkour_isaaclab.__path__[0].split('/')[1:-1]:
       logs_path = os.path.join(logs_path, path)
   logs_path = os.path.join(logs_path,'logs',args.rl_lib,args.task, args.expid)
   cfgs_path = os.path.join(logs_path, 'params')
