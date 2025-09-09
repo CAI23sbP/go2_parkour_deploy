@@ -1,6 +1,6 @@
 import re
 import os 
-import Isaaclab_Parkour
+import parkour_isaaclab
 import torch
 import numpy as np 
 from scripts.utils import load_local_cfg
@@ -9,7 +9,7 @@ from core.utils import isaac_to_mujoco, ISAAC_JOINT_NAMES
 def main(args):
     """Play with RSL-RL agent."""
     logs_path = '/'
-    for path in Isaaclab_Parkour.__path__[0].split('/')[1:-1]:
+    for path in parkour_isaaclab.__path__[0].split('/')[1:-1]:
         logs_path = os.path.join(logs_path, path)
     logs_path = os.path.join(logs_path,'logs',args.rl_lib,args.task, args.expid)
     cfgs_path = os.path.join(logs_path, 'params')
