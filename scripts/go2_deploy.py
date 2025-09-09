@@ -1,5 +1,5 @@
 import os 
-import Isaaclab_Parkour
+import parkour_isaaclab
 from scripts.utils import load_local_cfg
 from core.deployment_player import DeploymentPlayer
 # import multiprocessing as mp
@@ -8,7 +8,7 @@ import sys
 def main(args):
     """Play with RSL-RL agent."""
     logs_path = '/'
-    for path in Isaaclab_Parkour.__path__[0].split('/')[1:-1]:
+    for path in parkour_isaaclab.__path__[0].split('/')[1:-1]:
         logs_path = os.path.join(logs_path, path)
     logs_path = os.path.join(logs_path,'logs',args.rl_lib,args.task, args.expid)
     # model_path = os.path.join(logs_path, f'{args.model_id}.pt')
