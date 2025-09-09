@@ -1,6 +1,6 @@
 from mujoco_deploy.mujoco_wrapper import MujocoWrapper
 import os ,core, copy
-import Isaaclab_Parkour
+import parkour_isaaclab
 from scripts.utils import load_local_cfg
 import torch as th 
 from core.utils import isaac_to_mujoco, mujoco_to_isaac
@@ -63,7 +63,7 @@ class TESTRESET(MujocoWrapper):
 
 def main(args):
     logs_path = '/'
-    for path in Isaaclab_Parkour.__path__[0].split('/')[1:-1]:
+    for path in parkour_isaaclab.__path__[0].split('/')[1:-1]:
         logs_path = os.path.join(logs_path, path)
     logs_path = os.path.join(logs_path,'logs',args.rl_lib,args.task, args.expid)
     cfgs_path = os.path.join(logs_path, 'params')
