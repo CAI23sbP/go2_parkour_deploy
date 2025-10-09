@@ -12,8 +12,7 @@ Before installing this repo, you must install a [unitree_mujoco](https://github.
 
 `git clone https://github.com/CAI23sbP/go2_deploy.git`
 
-`cd go2_deploy && pip3 install -e .`
-
+`cd go2_deploy &&  .`
 
 ### 2. How to use
 
@@ -21,40 +20,33 @@ Before installing this repo, you must install a [unitree_mujoco](https://github.
 
 `export LD_LIBRARY_PATH=~/anaconda3/envs/env_isaaclab/lib:$LD_LIBRARY_PATH`
 
-### 3. Sim2Sim  
 
-### 3.1. Create parkour_demo env 
+### 3. Sim2Sim
+
+### 3.1. Create parkour_demo env
 
 `python3 mujoco_deploy/mujoco_terrain_generator.py`
 
-![alt text](<Screenshot from 2025-09-08 19-42-46.png>)
+![alt text](Screenshot from 2025-09-08 19-42-46.png)
 
 ### 3.2. Deploy mujoco
 
 `python3 scripts/go2_deploy --interface lo`
 
-
 https://github.com/user-attachments/assets/b7e9e72d-6e8c-4092-9d88-606186e82b8c
-
-
 
 ### 4. TODO list
 
 * [ ] Make Real-world deployment code
-
 
 ### Acknowledgement
 
 Thanks to their previous projects.
 
 1. @machines-in-motion [repo](https://github.com/machines-in-motion/Go2Py)
-
 2. @NVlabs [repo](https://github.com/NVlabs/HOVER)
-
 3. @eureka-research [repo](https://github.com/eureka-research/eurekaverse)
-
 4. @boston-dynamics [repo](https://github.com/boston-dynamics/spot-rl-example)
-
 5. @itt-DLSLab [repo](https://github.com/iit-DLSLab/gym-quadruped)
 
 ## Citation

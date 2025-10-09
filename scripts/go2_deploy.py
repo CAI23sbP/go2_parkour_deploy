@@ -1,4 +1,11 @@
 import os 
+os.environ["SDL_VIDEODRIVER"] = "dummy"
+os.environ["SDL_AUDIODRIVER"] = "dummy"
+os.environ["SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS"] = "1"  # optional, avoids joystick init issues
+
+import sys
+sys.path.append("/home/wang/IsaacLab/Isaaclab_Parkour")
+
 import parkour_isaaclab
 from scripts.utils import load_local_cfg
 from core.deployment_player import DeploymentPlayer
@@ -38,7 +45,7 @@ if __name__ == "__main__":
     # mp.set_start_method("spawn")
     parser = argparse.ArgumentParser(description='sim_2_sim')
     parser.add_argument("--rl_lib", type=str, default='rsl_rl')
-    parser.add_argument("--task", type=str, default='unitree_go2_parkour')
+    parser.add_argument("--task", type=str, default='unitree_go2_parkour_student_ppo')
     parser.add_argument("--expid", type=str, default='2025-09-03_12-07-56')
     parser.add_argument("--interface", type=str, default='lo')
     parser.add_argument("--use_joystick", action='store_true', default=False)

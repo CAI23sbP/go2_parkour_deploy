@@ -1,6 +1,8 @@
 import numpy as np
 import trimesh
 import scipy.interpolate as interpolate
+import sys
+sys.path.append("/home/wang/IsaacLab/Isaaclab_Parkour")
 import parkour_isaaclab, os
 from scripts.utils import load_local_cfg
 import core
@@ -183,6 +185,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='sim_2_sim')
     parser.add_argument("--rl_lib", type=str, default='rsl_rl')
     parser.add_argument("--task", type=str, default='unitree_go2_parkour')
-    parser.add_argument("--expid", type=str, default='2025-08-13_05-15-58')
+    parser.add_argument("--expid", type=str, default='2025-09-14_13-28-40')
     args = parser.parse_args()
     main(args)
