@@ -1,12 +1,13 @@
-import os 
-os.environ["SDL_VIDEODRIVER"] = "dummy"
-os.environ["SDL_AUDIODRIVER"] = "dummy"
-os.environ["SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS"] = "1"  # optional, avoids joystick init issues
+import os
+# os.environ["MUJOCO_GL"] = "osmesa"
+# os.environ["SDL_VIDEODRIVER"] = "dummy"
+# os.environ["SDL_AUDIODRIVER"] = "dummy"
 
 import sys
 sys.path.append("/home/wang/IsaacLab/Isaaclab_Parkour")
 
 import parkour_isaaclab
+sys.path.append("/home/wang/IsaacLab/go2_parkour_deploy")
 from scripts.utils import load_local_cfg
 from core.deployment_player import DeploymentPlayer
 # import multiprocessing as mp
